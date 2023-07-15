@@ -53,5 +53,16 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/lostmart/modal-package-martin"
-	}
+	},
+	"author": {
+		"name": "Martin P",
+		"email": "codeme.martin@gmail.com",
+		"url": "https://martindev.site/"
+	},
+	"description": "This modal package is a lightweight and customizable react component that allows you to easily display modal windows in your React applications. With this package, you can create and manage modal windows with minimal effort, providing a seamless user experience.",
+	"keywords": [
+		"modal",
+		"react-component",
+		"first package =) "
+	]
 }
