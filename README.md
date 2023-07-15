@@ -13,13 +13,34 @@ npm install modal-package-martin
 
 ## Usage
 
+This project needs to use `useState` with a variable `showModal` to toggle the modal visibility
+
+`const [showModal, setModal] = useState(false);`
+
+and a function to change its visibility
+
+```javascript
+const handleClick = () => {
+	setModal(() => !showModal)
+}
+```
+
+The modal accepts three props:
+
+- showModal (a boolean that respresents the modal visibility)
+- onClick (a fn to change the modal visibility)
+- children (the elements that will be displayed in the modal content)
+
 ```javascript
 import Modal from 'modal-package-martin-test/dist/Modal'
 
 // Example usage
 const App = () => {
+	const [showModal, setModal] = useState(false)
+
 	const handleClick = () => {
-		// Perform action on modal close
+		// Perform action to toggle modal
+		setModal(() => !showModal)
 	}
 
 	return (
@@ -32,6 +53,21 @@ const App = () => {
 	)
 }
 ```
+
+Recomended html structure:
+
+```html
+<>
+      <div className="modal-header">
+        <h5 className="modal-title">Modal title</h5>
+      </div>
+      <div className="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+</>
+```
+
+The classes "modal-header", "modal\*title" and "modal-body" already have some default css rules than can be overridden using inle styling or regular a simple css file that targets these classes
 
 ## Package Details
 
@@ -103,3 +139,7 @@ The Modal Package has the following dev dependencies:
 The Modal Package repository can be found at
 
 - [https://github.com/lostmart/modal-package-martin](https://github.com/lostmart/modal-package-martin)
+
+## Online Snadbox
+
+- [https://codesandbox.io/s/modal-sample-g5m7nn](https://codesandbox.io/s/modal-sample-g5m7nn)
