@@ -1,5 +1,5 @@
 {
-	"name": "modal-package-martin",
+	"name": "modal-package-martin-test",
 	"version": "0.1.0",
 	"private": false,
 	"dependencies": {
@@ -52,6 +52,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "URL_OF_YOUR_REPOSITORY"
+		"url": "https://github.com/lostmart/modal-package-martin"
 	}
 }

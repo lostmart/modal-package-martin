@@ -28,9 +28,7 @@ function App() {
 
 	return (
 		<div className="container">
-			<button value="ex1" onClick={handleClick}>
-				Show Modal
-			</button>
+			<button onClick={handleClick}>Show Modal</button>
 			<Modal showModal={showModal} onClick={handleClick}>
 				<TestContet />
 			</Modal>
