@@ -27,9 +27,9 @@ const handleClick = () => {
 
 The modal accepts three props:
 
-- showModal (a boolean that respresents the modal visibility)
-- onClick (a fn to change the modal visibility)
-- children (the elements that will be displayed in the modal content)
+- `showModal` (a boolean that respresents the modal visibility)
+- `onClick` (a fn to change the modal visibility)
+- `children` (the elements that will be displayed in the modal content)
 
 ```javascript
 import Modal from 'modal-package-martin-test/dist/Modal'
@@ -67,7 +67,7 @@ Recomended html structure:
 </>
 ```
 
-The classes "modal-header", "modal\*title" and "modal-body" already have some default css rules than can be overridden using inle styling or regular a simple css file that targets these classes
+The classes "modal-header", "modal-title" and "modal-body" already have some default css rules than can be overridden using inle styling or regular a simple css file that targets these classes
 
 ## Package Details
 
