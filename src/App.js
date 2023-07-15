@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
+import Modal from './components/Modal'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const TestContet = () => {
+	return (
+		<>
+			<div className="modal-header">
+				<h5 className="modal-title">Modal title</h5>
+			</div>
+			<div className="modal-body">
+				<img
+					src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+					alt="random"
+				/>
+				<p>Modal body text goes here.</p>
+			</div>
+		</>
+	)
 }
 
-export default App;
+function App() {
+	const [showModal, setModal] = useState(false)
+
+	const handleClick = () => {
+		setModal(() => !showModal)
+	}
+
+	return (
+		<div className="container">
+			<button value="ex1" onClick={handleClick}>
+				Show Modal
+			</button>
+			<Modal showModal={showModal} onClick={handleClick}>
+				<TestContet />
+			</Modal>
+		</div>
+	)
+}
+
+export default App
