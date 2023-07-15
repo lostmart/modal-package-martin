@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The Modal Package is a lightweight and customizable package that allows you to easily display modal windows in your React applications. With this package, you can create and manage modal windows with minimal effort, providing a seamless user experience.
 
+![image](./screenshot.gif)
+
 ##Installation
 To install the Modal Package, use the following command:
 
